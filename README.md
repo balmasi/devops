@@ -7,11 +7,12 @@ This is a self-contained little example data pipeline project.
 1. Clone the code
 2. Run the code (show a screenshot)
 3. Show messages being passed between components (screenshot)
-4. Show data populated in neo4j using the neo4j GUI at localhost: http://localhost:7474/browser/ (screenshot)
-5. Use the elasticvue GUI (https://elasticvue.com/) to show the content of the elasticsearch index at localhost:9200 (screenshot). One message in the index should look like this: ```{
+4. Explain in one printed page or less (text file) what the code in this repo does and how all the components are interacting with each other
+5. Show data from this code populated in neo4j using the neo4j GUI at localhost: http://localhost:7474/browser/ (screenshot)
+6. Use the elasticvue GUI (https://elasticvue.com/) to show the content of the newly created elasticsearch index at localhost:9200 (screenshot). One message in the index should look like this: ```{
 	"_index": "messages-test",
 	"_type": "_doc",
-	"_id": "d6oBbIoBmNUJVupvUGb-",
+	"_id": "d6oBbIoBmNUJVupvUGb-",e
 	"_version": 1,
 	"_seq_no": 7,
 	"_primary_term": 1,
@@ -20,7 +21,6 @@ This is a self-contained little example data pipeline project.
 		"content": "Message 29-2023-09-06 19:39:00.220912"
 	}
 }```
-6. Explain in one printed page or less what this code does (text file)
 7. Show a screenshot of the log messages from the running containers and explain how you would use these messages to debug the project/pipeline
 8. Describe how to change the docker-compose for this project into a Kubernetes deployment, and service for each component. If it is needed, you can add a container registry for the producer and consumer, ConfigMaps, Secrets, Persistent Volumes, Helm charts, etc. The goal is for you to submit something that makes sense to you and that you can explain in the video interview. Bonus points if it actually runs, but the goal is to have you show that you understand the underlying technology. For example, you might include instructions like the following:
 
